@@ -150,7 +150,6 @@ public class Main {
                 })
         ).get();
 
-        // Убедитесь, что все элементы подписки успешно созданы
         for (UaMonitoredItem item : monitoredItems) {
             if (item.getStatusCode().isGood()) {
                 System.out.println("Подписка на тег " + variableNode.getBrowseName().getName() + " успешно создана.");
